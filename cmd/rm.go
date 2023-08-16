@@ -39,7 +39,7 @@ var rmCmd = &cobra.Command{
 				continue
 			}
 			db.RmTask(tasks[id-1].Key)
-			fmt.Printf("Task %d has been marked as done.\n", id)
+			fmt.Printf("Task %d has been removed.\n", id)
 		}
 	},
 }
