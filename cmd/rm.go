@@ -18,7 +18,7 @@ var rmCmd = &cobra.Command{
 	Short:   "Removes a task from the list.",
 	Example: "Task rm 1\nTask rm 1 2 4",
 	Long: `Removes a task from the database using the key shown using the list command. 
-	This command is only available for uncompleted tasts, since the completed ones are removed
+	This command is only available for uncompleted tasks, since the completed ones are removed
 	from the db automatically a day after they get completed. Accepts an arbitrary number of 
 	indexes to remove.`,
 	Run: func(cmd *cobra.Command, args []string) {
